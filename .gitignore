@@ -9,7 +9,8 @@ wheels/
 .vscode/
 docsList/
 downloaded_docs/
-avoid_downloaded_docs/
+avoid_downloaded_docs_1/
+avoid_downloaded_docs_2/
 expired_csv/
 
 # Virtual environments

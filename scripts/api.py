@@ -124,7 +124,9 @@ def get_doc(date_from: dt.datetime) -> None:
 
             time.sleep(10)  # Sleep for 10 second to avoid overwhelming the API
             res = _iter_download_doc(doc_id)
-            with open(f'./downloaded_docs/{date}_{doc_id}_{edinet_code}_{filter_name}_{doc_description}.zip', 'wb') as f:
+            open_path = f'./downloaded_docs/{date}_{doc_id}_{edinet_code}_{filter_name}_{doc_description}.zip'
+            print(f"\rsave document: {open_path[:50]}...", end="")
+            with open(open_path, 'wb') as f:
                 f.write(res.content)
     
     return

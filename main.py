@@ -8,7 +8,7 @@ def main():
         # mailme.send_email_abount_accomplish(
         #     additional_info = f"DocsListのダウンロードが完了しました。{len(list(Path('./docsList').glob('*.csv')))}件のDocsListがダウンロードされました。"
         # )
-        api.get_doc(date_from='2016-02-19')
+        api.get_doc(date_from='2025-01-30')
         mailme.send_email_abount_accomplish(
             additional_info = f"Docのダウンロードが完了しました。{len(list(Path('./downloaded_docs').glob('*.zip')))}件のDocがダウンロードされました。"
         )
@@ -20,3 +20,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
